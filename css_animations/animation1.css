@@ -1,0 +1,57 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: cool-animation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-direction:normal;
+  /*reverse - starting off from 100%blue to 0%red
+  normal- normal is the normal way
+  alternate- 1st complete one normal flow and when it 
+  ends(normal ends) go to that action which u just did previously
+  alternate-reverse -1st will go reverse(i.e starting off from 100%blue) complete one normal flow then (alternate) go to that action which u did previously*/ 
+  animation-fill-mode:backwards;
+  /*forward-will matain the last thing which happened(the 0% part (blue color))
+  */
+  
+}
+@keyframes cool-animation {
+  0%{
+  background-color: red;
+  left:0px;
+  top: 0px;
+  }
+  25%{
+  background-color: orange;
+  left: 500px;
+  top: 0px;
+  }
+  50%{
+  background-color: green;
+  left: 500px;
+  top: 500px;
+  border-radius:50%;
+  }
+  75%{
+  background-color: magenta;
+  left: 0px;
+  top: 500px;
+  border-radius: 30%;
+  }
+  100%{
+ background-color:blue;
+ left: 0px;
+ top: 0px;
+ border-radius: 0px;
+  }
+}
+
+/* postion- absolute - to it's parent's postition
+, relative - to it's normal position
+,static - nothing happens
+, fixed - postion relative to it's browsers window
+sticky   */

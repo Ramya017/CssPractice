@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), */
+}
+.bgimage{
+    background-image:url('travel.jpg'),linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    background-size: cover;
+    /* (cover- will allow image to fit the entire screen, even if parts of it are not displayed) */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* (allows the center part of the image to be displayed) */
+    height: 100vh;
+    width: 100%;
+
+}
+.menu{
+    width: 85%; 
+    /* (how much width of the entire screen) */
+    margin: auto;
+    /* (to center the nav)  */
+    padding: 35px 0;
+    /* (padding of top-bottom, left-right:0) */
+    display: flex;
+    /* (nav becomes a flex-cont, logo and items become flex items) */
+    align-items: center;
+    /* (to vertically align in the center of the con) */
+    justify-content: space-between;
+    /* (to horizontally align in logo and items away from each other) */
+}
+.logo{
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  width: 130px;
+}
+.menu ul li{
+    display: inline-block;
+    /* (to display inline, becuse lis are block level elems) */
+    list-style: none;
+    margin:0 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.items{
+    font-size: 1.2rem;
+}
